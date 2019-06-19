@@ -23,7 +23,7 @@ class EmailParser
     #   email.length > 1
     # end
     @emails = emails_array.uniq
-    
+
 
   end
 
