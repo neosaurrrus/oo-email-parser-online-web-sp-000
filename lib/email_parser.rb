@@ -16,14 +16,14 @@ class EmailParser
     commas_out_emails = @email_string.gsub(',', ' ')
     doublespace_out_emails = commas_out_emails.gsub('  ', ' ')
     puts "#{doublespace_out_emails}X"
-    emails_array= doublespace_out_emails.split(" ");
+    emails_array = doublespace_out_emails.split(" ");
 
     puts emails_array
     # short_parsed_emails = parsed_emails.filter do |email|
     #   email.length > 1
     # end
     @emails = emails_array.uniq
-    unique_emails
+    
 
   end
 
