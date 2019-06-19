@@ -15,7 +15,7 @@ class EmailParser
   def parse
     commas_out_emails = @email_string.gsub(',', ' ')
     doublespace_out_emails = commas_out_emails.gsub('  ', ' ')
-    puts doublespace_out_emails
+    puts "#{doublespace_out_emails}X"
     emails_array= doublespace_out_emails.split(" ");
 
     puts emails_array
